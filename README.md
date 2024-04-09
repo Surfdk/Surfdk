@@ -10,3 +10,10 @@
 Surfdk/Surfdk is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+$client = new Google_Client();
+$client->setClientId('');
+$client->setClientSecret('');
+$client->setRedirectUri('');
+$client->setScopes(['email', 'profile']);
+
+$authUrl = $client->createAuthUrl();
